@@ -1,0 +1,232 @@
+/* Navigation element that collapses on mobile */
+.collapsible-nav {
+  flex-direction: column;
+  font-size: 14px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav {
+    flex-direction: row;
+  }
+}
+
+.collapsible-nav-border {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-border {
+    border-top: 0;
+  }
+}
+
+.collapsible-nav-toggle {
+  top: calc(45px / 2);
+  transform: translateY(-50%);
+  position: absolute;
+  right: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-toggle {
+    display: none;
+  }
+}
+
+[dir="rtl"] .collapsible-nav-toggle {
+  left: 0;
+  right: auto;
+}
+
+.collapsible-nav-toggle-icon {
+  display: none;
+}
+
+.collapsible-nav-toggle[aria-expanded="false"] .chevron-icon {
+  display: inline-block;
+}
+
+.collapsible-nav-toggle[aria-expanded="true"] .x-icon {
+  display: inline-block;
+}
+
+.collapsible-nav-toggle:focus {
+  outline: none;
+  border: 1px solid $brand_color;
+}
+
+.collapsible-nav-list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list {
+    flex-direction: row;
+  }
+}
+
+.collapsible-nav-list li {
+  color: $text_color;
+  line-height: 45px;
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list li {
+    line-height: normal;
+    margin-right: 30px;
+  }
+  [dir="rtl"] .collapsible-nav-list li {
+    margin-left: 30px;
+    margin-right: 0;
+  }
+  .collapsible-nav-list li a {
+    text-decoration: none;
+    padding: 15px 0;
+  }
+}
+
+.collapsible-nav-list li a {
+  color: $text_color;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list li:hover {
+    border-bottom: 4px solid #ddd;
+  }
+  .collapsible-nav-list li:hover a:not([aria-current="page"]) {
+    padding: 15px 0 11px 0;
+    text-decoration: none;
+  }
+}
+
+.collapsible-nav-list li:not([aria-selected="true"]),
+.collapsible-nav-list li:not(.current) {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list li:not([aria-selected="true"]),
+  .collapsible-nav-list li:not(.current) {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list li[aria-selected="true"] {
+    padding: 15px 0 11px 0;
+  }
+}
+
+.collapsible-nav-list li[aria-selected="true"],
+.collapsible-nav-list li.current {
+  order: 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .collapsible-nav-list li[aria-selected="true"],
+  .collapsible-nav-list li.current {
+    border-bottom: 4px solid $brand_color;
+    order: 1;
+  }
+}
+
+.collapsible-nav-list li[aria-selected="true"] a,
+.collapsible-nav-list li.current a {
+  color: $text_color;
+}
+
+.collapsible-nav[aria-expanded="true"] li:not([aria-selected="true"]),
+.collapsible-nav[aria-expanded="true"] li:not(.current) {
+  display: block;
+}
+
+/* Sidebar navigation that collapses on mobile */
+.collapsible-sidebar {
+  flex: 1;
+  max-height: 45px;
+  overflow: hidden;
+  padding: 10px 0;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .collapsible-sidebar {
+    max-height: none;
+    padding: 0;
+  }
+}
+
+.collapsible-sidebar-title {
+  margin-top: 0;
+}
+
+.collapsible-sidebar-toggle {
+  position: absolute;
+  top: calc(45px / 2);
+  transform: translateY(-50%);
+  right: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .collapsible-sidebar-toggle {
+    display: none;
+  }
+}
+
+[dir="rtl"] .collapsible-sidebar-toggle {
+  left: 0;
+  right: auto;
+}
+
+.collapsible-sidebar-toggle-icon {
+  display: none;
+}
+
+.collapsible-sidebar-toggle[aria-expanded="false"] .chevron-icon {
+  display: inline-block;
+}
+
+.collapsible-sidebar-toggle[aria-expanded="true"] .x-icon {
+  display: inline-block;
+}
+
+.collapsible-sidebar-toggle:focus {
+  outline: none;
+  border: 1px solid $brand_color;
+}
+
+.collapsible-sidebar-body {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .collapsible-sidebar-body {
+    display: block;
+  }
+}
+
+.collapsible-sidebar[aria-expanded="true"] {
+  max-height: none;
+}
+
+.collapsible-sidebar[aria-expanded="true"] .collapsible-sidebar-body {
+  display: block;
+}

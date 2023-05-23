@@ -1,0 +1,93 @@
+/***** Blocks *****/
+/* Used in Homepage#categories and Community#topics */
+.blocks-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .blocks-list {
+    margin: 0 -15px;
+  }
+}
+
+.blocks-item {
+  border: 1px solid $color_dark;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: $color_dark;
+  display: flex;
+  flex: 1 0 340px;
+  margin: 0 0 25px;
+  max-width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .blocks-item {
+    margin: 0 15px 25px;
+  }
+}
+
+.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
+  background-color: $brand_color;
+  border-color: $brand_color;
+}
+
+.blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {
+  color: $color_white;
+  text-decoration: none;
+}
+
+.blocks-item-internal {
+  background-color: transparent;
+  border: 1px solid #ddd;
+}
+
+.blocks-item-internal .icon-lock {
+  height: 15px;
+  width: 15px;
+  bottom: 5px;
+  position: relative;
+}
+
+.blocks-item-internal a {
+  color: $color_dark;
+}
+
+.blocks-item-link {
+  color: $color_dark;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  border-radius: inherit;
+}
+
+.blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.blocks-item-link:focus {
+  outline: 0;
+  box-shadow: 0 0 0 3px $color_dark;
+  text-decoration: none;
+}
+
+.blocks-item-title {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.blocks-item-description {
+  margin: 0;
+}
+
+.blocks-item-description:not(:empty) {
+  margin-top: 10px;
+}

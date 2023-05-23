@@ -1,0 +1,48 @@
+
+/***** Section pages *****/
+.section-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.section-content {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .section-content {
+    flex: 0 0 80%;
+  }
+}
+
+.section-list {
+  margin: 40px 0;
+}
+
+.section-list-item {
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.section-list-item:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.section-list-item a {
+  align-items: center;
+  color: $text_color;
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-all-sections-trigger {
+  cursor: pointer;
+  display: block;
+  padding: 15px;
+  text-align: center;
+}
+
+.see-all-sections-trigger[aria-hidden="true"] {
+  display: none;
+}

@@ -1,0 +1,68 @@
+/***** Category pages *****/
+.category-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.category-content {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .category-content {
+    flex: 0 0 80%;
+  }
+}
+
+.section-tree {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .section-tree {
+    flex-direction: row;
+  }
+}
+
+.section-tree .section {
+  flex: initial;
+}
+
+@media (min-width: 768px) {
+  .section-tree .section {
+    flex: 0 0 45%;
+    /* Two columns for tablet and desktop. Leaving 5% separation between columns */
+  }
+}
+
+.section-tree-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.section-tree-title a {
+  color: $text_color;
+}
+
+.section-tree .see-all-articles {
+  display: block;
+  padding: 15px 0;
+}
+
+.article-list-item {
+  font-size: 16px;
+  padding: 15px 0;
+}
+
+.article-list-item a {
+  color: $text_color;
+}
+
+.icon-star {
+  color: $brand_color;
+  font-size: 18px;
+}
