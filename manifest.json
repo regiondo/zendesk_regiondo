@@ -69,13 +69,10 @@
           "label": "heading_font_label",
           "value": "'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif",
           "options": [
-
             {
               "label": "Open Sans",
               "value": "'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif"
             }
-
-
           ]
         },
         {
