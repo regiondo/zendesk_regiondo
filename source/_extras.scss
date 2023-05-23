@@ -1,7 +1,23 @@
-span[data-user-name="true"] {
-  background-color: yellow;
-  width: 120px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.user-info.dropdown {
+  span > svg {
+    display: inline-block;
+  }
+}
+
+/*--- footer  ----------*/
+footer {
+  &.footerion {
+    background-color: $color_light;
+  }
+
+  .extra-contactus {
+    a {
+      color: $color_white;
+    }
+    a:hover,
+    a:visited {
+      background-color: $brand_color;
+      color: $color_white;
+    }
+  }
 }

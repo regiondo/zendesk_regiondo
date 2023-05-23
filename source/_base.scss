@@ -1,0 +1,19 @@
+/***** Base *****/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background_color;
+  color: $color_dark;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (min-width: 1024px) {
+  body > main {
+    min-height: 65vh;
+  }
+}
