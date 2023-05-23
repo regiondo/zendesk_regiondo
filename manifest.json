@@ -1,7 +1,7 @@
 {
   "name": "Regiondo: Munich",
   "author": "Aleksandar Perisic",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "api_version": 2,
   "default_locale": "en-us",
   "settings": [
@@ -69,10 +69,18 @@
           "label": "heading_font_label",
           "value": "'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif",
           "options": [
+
+            {
+              "label": "Arial",
+              "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif"
+            },
+
             {
               "label": "Open Sans",
               "value": "'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif"
             }
+
+
           ]
         },
         {
