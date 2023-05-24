@@ -11,7 +11,8 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
-
+.article-relatives .recent-articles li,
+.article-relatives .related-articles li,
 .collapsible-sidebar-body {
   a {
     color: $color_dark;
@@ -25,5 +26,13 @@ a:hover, a:active, a:focus {
 
   a.current-article {
     color: $color_brand;
+  }
+}
+
+.article-relatives .recent-articles li,
+.article-relatives .related-articles li {
+  a:focus,
+  a:hover {
+    color: $brand_color;
   }
 }

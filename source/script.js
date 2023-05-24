@@ -10,6 +10,7 @@ function debounce(callback, wait) {
     };
 }
 
+
 // Define variables for search field
 let searchFormFilledClassName = "search-has-value";
 let searchFormSelector = "form[role='search']";

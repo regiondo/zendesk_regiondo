@@ -1371,11 +1371,21 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans";
-  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -1404,15 +1414,30 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+.article-relatives .recent-articles li a,
+.article-relatives .related-articles li a,
 .collapsible-sidebar-body a {
   color: #162d3d;
   text-decoration: none;
 }
+.article-relatives .recent-articles li a:visited,
+.article-relatives .recent-articles li a:hover,
+.article-relatives .related-articles li a:visited,
+.article-relatives .related-articles li a:hover,
 .collapsible-sidebar-body a:visited,
 .collapsible-sidebar-body a:hover {
   color: #000000;
 }
+.article-relatives .recent-articles li a.current-article,
+.article-relatives .related-articles li a.current-article,
 .collapsible-sidebar-body a.current-article {
+  color: #e6552d;
+}
+
+.article-relatives .recent-articles li a:focus,
+.article-relatives .recent-articles li a:hover,
+.article-relatives .related-articles li a:focus,
+.article-relatives .related-articles li a:hover {
   color: #e6552d;
 }
 
@@ -1479,7 +1504,7 @@ a:hover, a:active, a:focus {
 
 .article-list-item {
   font-size: 16px;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .article-list-item a {
@@ -2191,8 +2216,15 @@ a.recent-activity-item-link:focus {
   margin-right: 3px;
 }
 
+/* images */
+/* user avatar single article */
 .user-info.dropdown span > svg {
   display: inline-block;
+}
+
+/* images */
+.img-container {
+  margin: 20px 0 40px;
 }
 
 /*--- footer  ----------*/
