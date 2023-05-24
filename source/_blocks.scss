@@ -67,6 +67,13 @@
   justify-content: center;
   border-radius: inherit;
 }
+/* Icons */
+.blocks-item-link svg {
+  display: inline-block;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 42px;
+}
 
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
   color: inherit;

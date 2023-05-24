@@ -53,6 +53,18 @@
   padding: 15px 0;
 }
 
+.page-header {
+  .cat-icon {
+    display: inline-block;
+    vertical-align: middle;
+
+    svg {
+      width: 32px;
+      height: auto;
+    }
+  }
+}
+
 .article-list-item {
   font-size: 16px;
   padding: 15px 0;

@@ -1332,6 +1332,14 @@ body {
   border-radius: inherit;
 }
 
+/* Icons */
+.blocks-item-link svg {
+  display: inline-block;
+  text-align: center;
+  margin-inline: auto;
+  max-width: 42px;
+}
+
 .blocks-item-link:visited, .blocks-item-link:hover, .blocks-item-link:active {
   color: inherit;
   text-decoration: none;
@@ -1458,6 +1466,15 @@ a:hover, a:active, a:focus {
 .section-tree .see-all-articles {
   display: block;
   padding: 15px 0;
+}
+
+.page-header .cat-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-header .cat-icon svg {
+  width: 32px;
+  height: auto;
 }
 
 .article-list-item {
