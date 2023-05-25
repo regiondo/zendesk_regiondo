@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '../node_modules/normalize.css/normalize';
+/// @import '../node_modules/normalize.css/normalize';
+@import "source/normalize";
 @import "source/variables";
 @import "source/fonts";
 @import "source/base";
