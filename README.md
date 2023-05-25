@@ -1,6 +1,9 @@
 # Zendesk Theme for Support
 Extended with Tailwind and Laravel Mix
 
+[Based on Copenhagen Theme](https://github.com/zendesk/copenhagen_theme/tree/master)
+
+
 ```js
     // install
     npm install
