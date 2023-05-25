@@ -2,7 +2,9 @@
 * {
   box-sizing: border-box;
 }
-
+svg {
+  display: inline-block;
+}
 body {
   background-color: $background_color;
   color: $color_dark;
