@@ -15,7 +15,7 @@
 }
 
 .blocks-item {
-  border: 1px solid $color_dark;
+  border: 1px solid $brand_color;
   border-radius: 4px;
   box-sizing: border-box;
   color: $color_dark;
@@ -24,6 +24,10 @@
   margin: 0 0 25px;
   max-width: 100%;
   text-align: center;
+
+  svg {
+    color: $brand_color;
+  }
 }
 
 @media (min-width: 768px) {
@@ -32,7 +36,9 @@
   }
 }
 
-.blocks-item:hover, .blocks-item:focus, .blocks-item:active {
+.blocks-item:hover,
+.blocks-item:focus,
+.blocks-item:active {
   background-color: $brand_color;
   border-color: $brand_color;
 }
