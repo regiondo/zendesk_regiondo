@@ -492,6 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "https://support.regiondo.com/de": "https://support.regiondo.com/hc/de-de",
         "https://support.regiondo.com/fr": "https://support.regiondo.com/hc/fr",
         "https://support.regiondo.com/it": "https://support.regiondo.com/hc/it-it",
+        "https://support.regiondo.com/it/": "https://support.regiondo.com/hc/it-it",
         "https://support.regiondo.com/es": "https://support.regiondo.com/hc/es",
     };
 
