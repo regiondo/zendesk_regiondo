@@ -490,7 +490,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.location.href == "https://regiondogmbh.zendesk.com/de/");
     {
         // window.location.href = "https://support.regiondo.com/hc/de-de/";
-        console.log( window.location.href );
+        console.log('p', window.location.pathname  );
+        console.log('h', window.location.href );
     }
 
 });
