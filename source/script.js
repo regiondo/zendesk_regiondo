@@ -491,8 +491,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let winLocation = window.location.href;
     let winLocationNew = "https://support.regiondo.com/de";
-    if (isErrorPage && winLocation === winLocationNew);
-    {
+    if (isErrorPage && winLocation === winLocationNew)  {
         // window.location.href = "https://support.regiondo.com/hc/de-de/";
         console.log('p', window.location.pathname  );
         console.log('h', window.location.href );
