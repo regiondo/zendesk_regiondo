@@ -487,11 +487,12 @@ document.addEventListener('DOMContentLoaded', function() {
     // https://support.regiondo.com/de
     // https://support.regiondo.com/hc/de-de
     // var isErrorPage = $(".error-page").length > 0;
-    if (window.location.pathname === "/de");
+    if (window.location.href === "https://support.regiondo.com/de");
     {
-        //window.location.href = "https://support.regiondo.com/hc/de-de/";
+        window.location.href = "https://support.regiondo.com/hc/de-de/";
         console.log('p', window.location.pathname  );
         console.log('h', window.location.href );
+        console.log( window.location.href === "https://support.regiondo.com/de" );
     }
 
 });
