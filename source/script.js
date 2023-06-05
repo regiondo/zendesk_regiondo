@@ -482,23 +482,26 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Quick Redirects as urgent fix only
+    // Get the current URL
+    var isErrorPage = document.getElementsByClassName('error-page')[0];
+    var currentURL = window.location.href;
 
-/// redirects
-// https://support.regiondo.com/de
-// https://support.regiondo.com/hc/de-de
-// var isErrorPage = $(".error-page").length > 0;
-    const isErrorPage = document.getElementsByClassName('error-page')[0];
+    // Define the target URL mappings
+    var targetURLs = {
+        "https://support.regiondo.com/de": "https://support.regiondo.com/hc/de-de",
+        "https://support.regiondo.com/fr": "https://support.regiondo.com/hc/fr",
+        "https://support.regiondo.com/it": "https://support.regiondo.com/hc/it-it",
+        "https://support.regiondo.com/es": "https://support.regiondo.com/hc/es",
+    };
 
-    let winLocation = window.location.href;
-    let winLocationNew = "https://support.regiondo.com/de";
-    if (isErrorPage && winLocation === winLocationNew)  {
-        window.location.href = "https://support.regiondo.com/hc/de-de/";
-        console.log('p', window.location.pathname  );
-        console.log('h', window.location.href );
-        console.log( window.location.href === "https://support.regiondo.com/de" );
+    // Check if the current URL matches any of the target URLs
+    if ( isErrorPage ) {
+        if (currentURL in targetURLs) {
+            // Redirect to the corresponding new page
+            window.location.href = targetURLs[currentURL];
+        }
     }
-
-
 
 
 });
