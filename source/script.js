@@ -490,10 +490,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Define the target URL mappings
     var targetURLs = {
         "https://support.regiondo.com/de": "https://support.regiondo.com/hc/de-de",
+        "https://support.regiondo.com/de/": "https://support.regiondo.com/hc/de-de",
         "https://support.regiondo.com/fr": "https://support.regiondo.com/hc/fr",
+        "https://support.regiondo.com/fr/": "https://support.regiondo.com/hc/fr",
         "https://support.regiondo.com/it": "https://support.regiondo.com/hc/it-it",
         "https://support.regiondo.com/it/": "https://support.regiondo.com/hc/it-it",
         "https://support.regiondo.com/es": "https://support.regiondo.com/hc/es",
+        "https://support.regiondo.com/es/": "https://support.regiondo.com/hc/es",
     };
 
     // Check if the current URL matches any of the target URLs
