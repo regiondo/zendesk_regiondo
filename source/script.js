@@ -498,7 +498,7 @@ const isErrorPage = document.getElementsByClassName('error-page')[0];
 window.onload = function() {
     if (isErrorPage && window.location.href === "https://support.regiondo.com/de");
     {
-        window.location.href = "https://support.regiondo.com/hc/de-de/";
+        // window.location.href = "https://support.regiondo.com/hc/de-de/";
         console.log('p', window.location.pathname  );
         console.log('h', window.location.href );
         console.log( window.location.href === "https://support.regiondo.com/de" );
