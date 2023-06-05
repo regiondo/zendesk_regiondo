@@ -489,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // var isErrorPage = $(".error-page").length > 0;
     if (window.location.href == "https://regiondogmbh.zendesk.com/de/");
     {
-        window.location.href = "https://support.regiondo.com/hc/de-de";
+        window.location.href = "https://support.regiondo.com/hc/de-de/";
     }
 
 });
