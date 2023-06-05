@@ -483,20 +483,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
-
-
-
-});
-
-
 /// redirects
 // https://support.regiondo.com/de
 // https://support.regiondo.com/hc/de-de
 // var isErrorPage = $(".error-page").length > 0;
-const isErrorPage = document.getElementsByClassName('error-page')[0];
+    const isErrorPage = document.getElementsByClassName('error-page')[0];
 
-window.onload = function() {
-    if (isErrorPage && window.location.href === "https://support.regiondo.com/de");
+    let winLocation = window.location.href;
+    let winLocationNew = "https://support.regiondo.com/de";
+    if (isErrorPage && winLocation === winLocationNew);
     {
         // window.location.href = "https://support.regiondo.com/hc/de-de/";
         console.log('p', window.location.pathname  );
@@ -504,4 +499,9 @@ window.onload = function() {
         console.log( window.location.href === "https://support.regiondo.com/de" );
     }
 
-}
+
+
+
+});
+
+
