@@ -489,6 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Define the target URL mappings
     var targetURLs = {
+        "https://support.regiondo.com/en": "https://support.regiondo.com/hc/en-gb",
         "https://support.regiondo.com/de": "https://support.regiondo.com/hc/de-de",
         "https://support.regiondo.com/de/": "https://support.regiondo.com/hc/de-de",
         "https://support.regiondo.com/fr": "https://support.regiondo.com/hc/fr",
