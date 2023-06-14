@@ -499,6 +499,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "https://support.regiondo.com/it/": "https://support.regiondo.com/hc/it-it",
         "https://support.regiondo.com/es": "https://support.regiondo.com/hc/es",
         "https://support.regiondo.com/es/": "https://support.regiondo.com/hc/es",
+        "https://support.regiondo.com/en/article/new-features-3167201": "https://support.regiondo.com/hc/en-gb/articles/10239171297437-New-Features",
     };
 
     // Check if the current URL matches any of the target URLs
