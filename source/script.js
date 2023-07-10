@@ -500,6 +500,9 @@ document.addEventListener('DOMContentLoaded', function() {
         "https://support.regiondo.com/es": "https://support.regiondo.com/hc/es",
         "https://support.regiondo.com/es/": "https://support.regiondo.com/hc/es",
         "https://support.regiondo.com/en/article/new-features-3167201": "https://support.regiondo.com/hc/en-gb/articles/10239171297437-New-Features",
+        "https://support.regiondo.com/fr/article/nouvelles-fonctions": "https://support.regiondo.com/hc/fr/articles/10239171297437-Nouvelles-fonctions",
+        "https://support.regiondo.com/de/article/neue-funktionen": "https://support.regiondo.com/hc/de-de",
+        "https://support.regiondo.com/it/article/nuove-funzionalit%C3%A0": "https://support.regiondo.com/hc/it-it",
     };
 
     // Check if the current URL matches any of the target URLs
