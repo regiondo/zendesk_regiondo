@@ -1,7 +1,9 @@
 # Zendesk Theme for Support
 Extended with Tailwind and Laravel Mix
 
-[Based on Copenhagen Theme](https://github.com/zendesk/copenhagen_theme/tree/master)
+[Source of Copenhagen Theme](https://github.com/zendesk/copenhagen_theme/tree/master)
+
+-[x] start fresh with full source of Copenhagen Theme if plan is to extend or add new features
 
 
 ```js
@@ -14,5 +16,4 @@ Extended with Tailwind and Laravel Mix
     // build
     npm run prod
 ```
-
 
